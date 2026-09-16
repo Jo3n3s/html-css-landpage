@@ -76,7 +76,31 @@ header {
         width: 350px
     }
 
-    & img{
+    /* & img{
         width: ;
+    } */
+
+}
+#cafe {
+    display: flex;
+    justify-content: center;
+
+    & div:first-child {
+        background-color: #c27d7a;
+        border-radius: 10%;
+        height: 468px;
+        color: white;
+    }
+    & div:nth-child(2) {
+        background-color: #8d8c8c;
+        border-radius: 10%;
+        height: 468px;
+        color: white;
+    }
+    & div:last-child {
+        background-color: #541511;
+        border-radius: 10%;
+        height: 468px;
+        color: white;
     }
 }
