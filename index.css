@@ -84,7 +84,7 @@ header {
 
 }
 
-#cafes{
+#cafes {
     /* border: 1px solid red; */
     background-image: url("./assets/bg-cafes.png");
     background-size: contain;
@@ -295,6 +295,7 @@ header {
     border-radius: 48px;
     color: #ffffff;
     display: flex;
+    justify-content: space-between;
     background-image: linear-gradient(#541511a8, #f3c7c4);
     padding-left: 40px;
     position: relative;
@@ -302,6 +303,7 @@ header {
     & h2 {
         font-size: 80px;
         line-height: 84px;
+        margin-top: 55px;
     }
 
     & .detalhe {
@@ -311,11 +313,104 @@ header {
     }
 
     & img {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
         /* transform: translate(-50%, -50%); */
-    };
+    }
+
+    & > div:nth-of-type(2){
+        /* border: 1px solid blue; */
+        width: 370px;
+        background-image: linear-gradient(202.65deg, #8f423d 4.72%, #ffffff 102.83%);
+        padding: 0px 34px;
+        border-radius: 0 48px 48px 0;
+
+        & h2{
+            font-size: 40px;
+        }
+
+        & .detalhe {
+            width: 100%;
+            margin-bottom: 26px;
+        }
+
+        & .endereco {
+            display: flex;
+            align-items: center;
+            /* gap: 26px; */
+            & box-icon {
+                width: 60px;
+                height: 40px;
+                fill: #ffffff;
+            }
+
+            & p {
+                margin-bottom: 0;
+            }
+        }
+    }
+    & h6 {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 16px 0;
+    }
+
+    & p {
+        width: 300px;
+        margin-bottom: 40px;
+
+    }
+
+    & a {
+        font-weight: bold;
+        color: #3c0e0e;
+        margin-bottom: 55px;
+        display: block;
+
+    }
+}
+footer {
+    width: 1115px;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto;
+    padding-top: 100px;
+
+    & h6 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    & ul, & ol {
+        list-style: none;
+    }
+
+    & ul {
+        display: flex;
+        gap: 10px;
+        margin-top: 16px;
+    }
+
+    & a {
+        color: #000000;
+        transition-duration: 200ms;
+        display: block;
+        line-height: 30px;
+        &:hover{
+            color: #c27d7a;
+            padding-left: 10px;
+        }
+    }
+
+    & div:nth-of-type(1) {
+        & p {
+            width: 300px;
+            margin-bottom: 20px;
+        }
+    }
+
 }
