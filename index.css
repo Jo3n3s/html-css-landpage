@@ -289,6 +289,21 @@ header {
     }
 
 }
+
+.container-background {
+  position: relative; /* Torna esta section a referência para o texto flutuante */
+  width: 100%;
+  display: inline-block; /* Ajusta o tamanho da section ao tamanho da imagem */
+  overflow: hidden;
+}
+
+.img-fundo {
+  width: 100%;
+  height: auto;
+  display: block; /* Remove espaços vazios na linha inferior da imagem */
+}
+
+
 #localizacao {
     width: 1115px;
     margin: 0 auto;
