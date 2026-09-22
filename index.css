@@ -290,17 +290,53 @@ header {
 
 }
 
+.principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 938px;
+    height: 339px;
+}
+
 .container-background {
-  position: relative; /* Torna esta section a referência para o texto flutuante */
-  width: 100%;
-  display: inline-block; /* Ajusta o tamanho da section ao tamanho da imagem */
-  overflow: hidden;
+    margin-top: -15px;
+    position: relative; /* Torna esta section a referência para o texto flutuante */
+    width: 100%;
+    display: inline-block; /* Ajusta o tamanho da section ao tamanho da imagem */
+
+    overflow: hidden;
+
+  
+}
+
+.conteudo-texto {
+    & h6 {
+        font-size: 20px;
+    }
+
+    & p {
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+
+}
+
+.conteudo-texto-dois {
+    & h6 {
+        font-size: 16px;
+    }
+
+    & p {
+        font-size: 16px;
+    }
 }
 
 .img-fundo {
-  width: 100%;
-  height: auto;
-  display: block; /* Remove espaços vazios na linha inferior da imagem */
+    width: 100%;
+    height: auto;
+    display: block; /* Remove espaços vazios na linha inferior da imagem */
 }
 
 
